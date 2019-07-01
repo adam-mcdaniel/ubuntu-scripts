@@ -39,10 +39,16 @@ function edit_grub {
 }
 
 
-# Load module for current boot
-temp_fix
-# Add module to list of modules to load on boot
-perm_fix
 
+echo "Are you using a Lenovo laptop? (y/n) "
+read is_using_lenovo
 
-echo "All done!"
+if [ is_using_lenovo = "y" ]
+then
+	# Load module for current boot
+	temp_fix
+	# Add module to list of modules to load on boot
+	perm_fix
+else
+	echo "Skipping Lenovo trackpad fix..."
+fi
