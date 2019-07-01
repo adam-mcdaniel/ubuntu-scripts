@@ -42,7 +42,7 @@ function edit_grub {
 
 read -p "Are you using a Lenovo laptop? (y/n) " is_using_lenovo
 
-if [ $is_using_lenovo == "y" ]
+if [ "$is_using_lenovo" == "y" ]
 then
 	# Load module for current boot
 	temp_fix
