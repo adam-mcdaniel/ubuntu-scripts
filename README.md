@@ -8,5 +8,4 @@ Just my scripts for my Ubuntu installs.
 curl https://raw.githubusercontent.com/adam-mcdaniel/ubuntu-scripts/master/install.sh -o install.sh
 chmod +x install.sh
 ./install.sh
-rm install.sh
 ```
